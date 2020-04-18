@@ -4,7 +4,7 @@ Covid-19-Tracker is a modern designed PWA that notifies users
 about the current state of Covid-19 pandemic. The app
 can show analytics data for a specific country or internationally.
 
-## Cotributing
+## Contributing
 
 This project is created with `create-react-app`, `Redux` and `TypeScript`. If you want to help the development of the
 app by contributing, we are more than happy to accept your
