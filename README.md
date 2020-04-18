@@ -1,44 +1,39 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Covid-19-Tracker
 
-## Available Scripts
+Covid-19-Tracker is a modern designed PWA that notifies users
+about the current state of Covid-19 pandemic. The app
+can show analytics data for a specific country or internationally.
 
-In the project directory, you can run:
+## Cotributing
 
-### `yarn start`
+This project is created with `create-react-app`, `Redux` and `TypeScript`. If you want to help the development of the
+app by contributing, we are more than happy to accept your
+help. Even if your new to GitHub and contributing, we are ready to help you. To contribute to this repository, you'll have to do the follwing-
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. Fork the Repository
+   ![Forking the repo](/md_imgs/fork.PNG)
+2. Go to your forked repo and clone the repo
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+   > git clone https://(your-username):(your-password)@github.com/(your-username)/covid-19-tracker.git
 
-### `yarn test`
+3. Create a branch and switch to it
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   > git checkout -b (your-branch-name)
 
-### `yarn build`
+4. Add the code/feature you want to add
+5. Add the changes to the staging area and commit the changes
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   > git add .
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+   > git commit -m "Added new feature"
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+6. Do a push to the remote repo
 
-### `yarn eject`
+   > git push
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+7. Then just go to your GitHub forked repo and you'll see a
+   button that will allow to do a pull request, just click it and accept changes the next page
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+....and that's it!
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+If you have any problem then you can create an issue in GitHub, we're glad to help!
