@@ -7,6 +7,7 @@ import washingHandsWebp from '../../assets/photos/webP/iconfinder___wash_hand_so
 import washingHandsNormal from '../../assets/photos/normal/iconfinder___wash_hand_soap_5925226.png';
 import wearMaskWebp from '../../assets/photos/webP/iconfinder_facial_mask_coronavirus_5964544.webp';
 import wearMaskNormal from '../../assets/photos/normal/iconfinder_facial_mask_coronavirus_5964544.png';
+import PreventionImgBlock from '../PreventionImgBlock/PreventionImgBlock';
 
 const PreventionPart: React.SFC<{}> = (props) => {
   return (

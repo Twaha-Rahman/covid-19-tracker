@@ -23,7 +23,7 @@ interface IApp {
   store: IStore;
 }
 
-class App extends React.Component<any, {}> {
+class App extends React.Component<IApp, {}> {
   constructor(props: any) {
     super(props);
     console.log(this.props);
@@ -55,4 +55,4 @@ class App extends React.Component<any, {}> {
   }
 }
 
-export default withRouter(connect(mapStateToProps)(App));
+export default connect(mapStateToProps)(App);
