@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
-import { withRouter } from 'react-router-dom';
+import { withRouter, RouteComponentProps } from 'react-router-dom';
 import mapStateToProps from '../../utilities/mapStateToProp';
 import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -9,22 +9,15 @@ import { faEye } from '@fortawesome/free-solid-svg-icons';
 import Button from '../../Components/Button/Button';
 import PreventionPart from '../../Components/PreventionPart/PreventionPart';
 
-import IHistory from '../../interfaces/IHistory';
-import ILocation from '../../interfaces/ILocation';
-import IMatch from '../../interfaces/IMatch';
 import IStore from '../../interfaces/IStore';
 
-interface IApp {
-  dispatch: any;
-  history: IHistory;
-  location: ILocation;
-  match: IMatch;
-  staticContext: any;
+interface IApp extends RouteComponentProps {
+
   store: IStore;
 }
 
 class App extends React.Component<IApp, {}> {
-  constructor(props: any) {
+  constructor(props: IApp) {
     super(props);
     console.log(this.props);
   }
@@ -55,4 +48,4 @@ class App extends React.Component<IApp, {}> {
   }
 }
 
-export default connect(mapStateToProps)(App);
+export default withRouter(connect(mapStateToProps)(App));
