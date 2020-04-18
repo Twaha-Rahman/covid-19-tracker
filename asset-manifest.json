@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.472d70cb.chunk.css",
+    "main.js": "/static/js/main.d045dc81.chunk.js",
+    "main.js.map": "/static/js/main.d045dc81.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.6537f79a.js",
+    "runtime-main.js.map": "/static/js/runtime-main.6537f79a.js.map",
+    "static/js/2.38df237d.chunk.js": "/static/js/2.38df237d.chunk.js",
+    "static/js/2.38df237d.chunk.js.map": "/static/js/2.38df237d.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.d650f37b4ebcf55ba079de22cb70d594.js": "/precache-manifest.d650f37b4ebcf55ba079de22cb70d594.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.472d70cb.chunk.css.map": "/static/css/main.472d70cb.chunk.css.map",
+    "static/js/2.38df237d.chunk.js.LICENSE.txt": "/static/js/2.38df237d.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/Lato-Regular.2d36b1a9.ttf",
+    "static/media/iconfinder___wash_hand_soap_5925226.png": "/static/media/iconfinder___wash_hand_soap_5925226.30df16de.png",
+    "static/media/iconfinder___wash_hand_soap_5925226.webp": "/static/media/iconfinder___wash_hand_soap_5925226.c78864e4.webp",
+    "static/media/iconfinder_facial_mask_coronavirus_5964544.webp": "/static/media/iconfinder_facial_mask_coronavirus_5964544.1d5ca1d4.webp",
+    "static/media/iconfinder_keep_distance_social_1_5964546.png": "/static/media/iconfinder_keep_distance_social_1_5964546.53a11615.png",
+    "static/media/iconfinder_keep_distance_social_1_5964546.webp": "/static/media/iconfinder_keep_distance_social_1_5964546.d7df300c.webp"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6537f79a.js",
+    "static/js/2.38df237d.chunk.js",
+    "static/css/main.472d70cb.chunk.css",
+    "static/js/main.d045dc81.chunk.js"
+  ]
+}
