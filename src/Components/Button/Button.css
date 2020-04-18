@@ -1,0 +1,24 @@
+.button {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2vh;
+  width: 100%;
+  border: 0;
+  border-radius: 50px;
+  color: var(--light-bg);
+  font-size: 1em;
+  font-family: 'Lato-Bold';
+  transition: ease-in-out 0.25s;
+}
+
+.button svg {
+  margin-top: 2.5px;
+  margin-right: 1em;
+  font-size: 1.25em;
+}
+
+.button:hover {
+  background-color: #3961d8 !important;
+}

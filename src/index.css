@@ -1,0 +1,43 @@
+:root {
+  --light-bg: #eeeeee;
+
+  --unselected: #9c9c9c;
+  --primary: #473f97;
+  --custom-red: #ff4c58;
+  --custom-blue: #4c79ff;
+  --custom-yellow: #ffb259;
+  --custom-green: #4cd97b;
+  --custom-green: #9059ff;
+}
+
+@font-face {
+  font-family: 'Lato-Regular';
+  src: url('./assets/fonts/Lato-Regular.ttf');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato-Bold';
+  src: url('./assets/fonts/Lato-Bold.ttf');
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+  font-family: 'Lato-Regular', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
+    'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overscroll-behavior: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  background-color: var(--light-bg);
+}
