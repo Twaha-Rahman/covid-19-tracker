@@ -1,3 +1,23 @@
 .prevention-part-container {
   padding: 0 1em 0 1em;
 }
+
+.imgs-container {
+  display: flex;
+}
+
+.img-container {
+  width: 100%;
+  text-align: center;
+}
+
+.img-container img {
+  width: calc(225% / 3);
+  height: auto;
+  border-radius: 100%;
+  background-color: var(--custom-brown);
+}
+
+.img-container p {
+  font-weight: 700;
+}
