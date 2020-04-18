@@ -32,7 +32,7 @@ class App extends React.Component<IApp, {}> {
   public render() {
     return (
       <div className="app-body">
-        <div className="app-upper-part">
+        <header className="app-upper-part">
           <div className="hamburger-bell-container">
             <div className="menu-button"></div>
             <FontAwesomeIcon icon={faBell} className="bell-icon" />
@@ -46,7 +46,7 @@ class App extends React.Component<IApp, {}> {
             </p>
             <Button text="See Symptoms" bgColor="var(--custom-blue)" icon={faEye} />
           </div>
-        </div>
+        </header>
         <div className="app-lower-part">
           <PreventionPart />
         </div>

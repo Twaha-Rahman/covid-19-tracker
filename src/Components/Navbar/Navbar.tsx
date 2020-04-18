@@ -10,7 +10,7 @@ interface INavbarProps {
 
 const Navbar: React.SFC<INavbarProps> = (props) => {
   return (
-    <div className="navbar-container">
+    <nav className="navbar-container">
       <NavLink to="/" exact={true} activeClassName="active-nav-link" className="nav-item-container">
         <FontAwesomeIcon icon={faHome} className="nav-item" />
       </NavLink>
@@ -25,7 +25,7 @@ const Navbar: React.SFC<INavbarProps> = (props) => {
       <NavLink to="/info" activeClassName="active-nav-link" className="nav-item-container">
         <FontAwesomeIcon icon={faInfoCircle} className="nav-item" />
       </NavLink>
-    </div>
+    </nav>
   );
 };
 
