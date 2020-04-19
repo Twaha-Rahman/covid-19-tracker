@@ -8,7 +8,10 @@ import { faBell } from '@fortawesome/free-regular-svg-icons';
 import { faEye } from '@fortawesome/free-solid-svg-icons';
 import Button from '../../Components/Button/Button';
 import PreventionPart from '../../Components/PreventionPart/PreventionPart';
-import SelfTest from '../../Components/SelfTest/SelfTest';
+import ImgBanner from '../../Components/ImgBanner/ImgBanner';
+import WebP from '../../Components/WebP/WebP';
+import CoughingWebp from '../../assets/photos/webP/iconfinder___cough_tissue_close_mouth_5925234.webp';
+import CoughingNormal from '../../assets/photos/normal/iconfinder___cough_tissue_close_mouth_5925234.png';
 
 import IStore from '../../interfaces/IStore';
 
@@ -42,11 +45,13 @@ class App extends React.Component<IApp, {}> {
           </div>
         </header>
         <div className="app-lower-part">
-          <Link to="/prevention">
-            <PreventionPart />
-          </Link>
 
-          <SelfTest />
+          <PreventionPart />
+
+
+          <ImgBanner title="Do your own test!" description="Follow the instructions to do a self test." imgJSX={
+            <WebP webpLink={CoughingWebp} normalLink={CoughingNormal} altText="Woman Coughing" />
+          } />
 
         </div>
       </div>

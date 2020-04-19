@@ -11,27 +11,30 @@ import washingHandsNormal from '../../assets/photos/normal/iconfinder___wash_han
 import wearMaskWebp from '../../assets/photos/webP/iconfinder_facial_mask_coronavirus_5964544.webp';
 import wearMaskNormal from '../../assets/photos/normal/iconfinder_facial_mask_coronavirus_5964544.png';
 import PreventionImgBlock from '../PreventionImgBlock/PreventionImgBlock';
+import { Link } from 'react-router-dom';
 
 const PreventionPart: React.SFC<{}> = (props) => {
   return (
-    <div className="prevention-part-container">
-      <h2>Prevention</h2>
-      <div className="imgs-container">
-        <div className="img-container">
-          <WebP normalLink={selfDistancingNormal} webpLink={selfDistancingWebp} altText="self-distancing" />
-          <p>Social Distancing</p>
+    <Link to="/prevention">
+      <div className="prevention-part-container">
+        <h2>Prevention</h2>
+        <div className="imgs-container">
+          <div className="img-container">
+            <WebP normalLink={selfDistancingNormal} webpLink={selfDistancingWebp} altText="self-distancing" />
+            <p>Social Distancing</p>
+          </div>
+          <div className="img-container">
+            <WebP normalLink={washingHandsNormal} webpLink={washingHandsWebp} altText="self-distancing" />
+            <p>Wash Your Hands</p>
+          </div>
+          <div className="img-container">
+            <WebP normalLink={wearMaskNormal} webpLink={wearMaskWebp} altText="self-distancing" />
+            <p>Wear A Mask</p>
+          </div>
         </div>
-        <div className="img-container">
-          <WebP normalLink={washingHandsNormal} webpLink={washingHandsWebp} altText="self-distancing" />
-          <p>Wash Your Hands</p>
-        </div>
-        <div className="img-container">
-          <WebP normalLink={wearMaskNormal} webpLink={wearMaskWebp} altText="self-distancing" />
-          <p>Wear A Mask</p>
-        </div>
+        <h4>Learn More <FontAwesomeIcon icon={faChevronRight} /></h4>
       </div>
-      <h4>Learn More <FontAwesomeIcon icon={faChevronRight} /></h4>
-    </div>
+    </Link>
   );
 };
 

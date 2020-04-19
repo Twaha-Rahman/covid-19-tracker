@@ -1,0 +1,13 @@
+.img-banner {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    border-radius: 15px;
+    background-color: var(--custom-purple);
+    color: var(--light-bg);
+}
+
+.img-banner img {
+    width: 60%;
+    height: 60%;
+}
