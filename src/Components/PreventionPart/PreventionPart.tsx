@@ -1,5 +1,8 @@
 import * as React from 'react';
 import './PreventionPart.css';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleRight, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+
 import WebP from '../../Components/WebP/WebP';
 import selfDistancingWebp from '../../assets/photos/webP/iconfinder_keep_distance_social_1_5964546.webp';
 import selfDistancingNormal from '../../assets/photos/normal/iconfinder_keep_distance_social_1_5964546.png';
@@ -27,6 +30,7 @@ const PreventionPart: React.SFC<{}> = (props) => {
           <p>Wear A Mask</p>
         </div>
       </div>
+      <h4>Learn More <FontAwesomeIcon icon={faChevronRight} /></h4>
     </div>
   );
 };

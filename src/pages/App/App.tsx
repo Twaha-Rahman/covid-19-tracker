@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
-import { withRouter, RouteComponentProps } from 'react-router-dom';
+import { withRouter, RouteComponentProps, Link } from 'react-router-dom';
 import mapStateToProps from '../../utilities/mapStateToProp';
 import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -8,6 +8,7 @@ import { faBell } from '@fortawesome/free-regular-svg-icons';
 import { faEye } from '@fortawesome/free-solid-svg-icons';
 import Button from '../../Components/Button/Button';
 import PreventionPart from '../../Components/PreventionPart/PreventionPart';
+import SelfTest from '../../Components/SelfTest/SelfTest';
 
 import IStore from '../../interfaces/IStore';
 
@@ -41,7 +42,12 @@ class App extends React.Component<IApp, {}> {
           </div>
         </header>
         <div className="app-lower-part">
-          <PreventionPart />
+          <Link to="/prevention">
+            <PreventionPart />
+          </Link>
+
+          <SelfTest />
+
         </div>
       </div>
     );

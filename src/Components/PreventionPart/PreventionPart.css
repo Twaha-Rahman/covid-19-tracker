@@ -2,6 +2,11 @@
   padding: 0 1em 0 1em;
 }
 
+.prevention-part-container h4 {
+  text-align: center;
+  color: var(--custom-blue);
+}
+
 .imgs-container {
   display: flex;
 }
