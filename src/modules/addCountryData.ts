@@ -1,31 +1,8 @@
-interface ICountry {
-  _id: number;
-  iso2: string;
-  iso3: string;
-  country: string;
-  lat: number;
-  long: number;
-  flag: string;
-}
-
-interface IData {
-  country: string;
-  countryInfo: ICountry;
-  cases: number;
-  todayCases: number;
-  deaths: number;
-  todayDeaths: number;
-  recovered: number;
-  active: number;
-  critical: number;
-  casesPerOneMillion: number;
-  deathsPerOneMillion: number;
-  updated: number;
-}
+import ICountryData from '../interfaces/ICountryData';
 
 interface IAddCountryDataAction {
   type: string;
-  countryData: IData;
+  countryData: ICountryData;
 }
 
 const addCountryData = (state = {}, action: IAddCountryDataAction) => {

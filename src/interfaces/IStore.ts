@@ -1,5 +1,9 @@
+import ICountryData from '../interfaces/ICountryData';
+import IGlobalData from '../interfaces/IGlobalData';
+
 interface IStore {
-  stepCounter: number;
+  addCountryData: ICountryData | {};
+  addGlobalData: IGlobalData | {};
 }
 
 export default IStore;

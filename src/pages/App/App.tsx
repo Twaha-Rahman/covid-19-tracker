@@ -17,6 +17,7 @@ import IStore from '../../interfaces/IStore';
 
 interface IApp extends RouteComponentProps {
   store: IStore;
+  dispatch: any;
 }
 
 class App extends React.Component<IApp, {}> {
@@ -26,9 +27,21 @@ class App extends React.Component<IApp, {}> {
   }
 
   public async componentDidMount() {
-    const data = await fetch('https://corona.lmao.ninja/v2/countries/bangladesh?yesterday=true');
-    const parsedData = await data.json();
-    console.log(parsedData);
+    const globalData = await fetch('https://corona.lmao.ninja/v2/all?yesterday=true');
+    const globalDataParsed = await globalData.json();
+
+    const countryData = await fetch('https://corona.lmao.ninja/v2/countries/bangladesh?yesterday=true');
+    const countryDataParsed = await countryData.json();
+
+    this.props.dispatch({
+      type: 'addCountryData',
+      countryData: countryDataParsed,
+    });
+
+    this.props.dispatch({
+      type: 'addGlobalData',
+      globalData: globalDataParsed,
+    });
   }
 
   public render() {
