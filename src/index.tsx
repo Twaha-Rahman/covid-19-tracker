@@ -5,6 +5,7 @@ import App from './pages/App/App';
 import * as serviceWorker from './serviceWorker';
 import Navbar from './Components/Navbar/Navbar';
 import Analytics from './pages/Analytics/Analytics';
+import News from './pages/News/News';
 
 import { Provider } from 'react-redux';
 import Store from './store';
@@ -20,6 +21,7 @@ ReactDOM.render(
         <Router.Route exact={true} component={Navbar} />
         <Router.Route exact={true} path="/" component={App} />
         <Router.Route path="/analytics" component={Analytics} />
+        <Router.Route path="/news" component={News} />
       </Router.BrowserRouter>
     </Provider>
   </React.StrictMode>,
