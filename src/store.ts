@@ -1,9 +1,11 @@
 import { createStore, combineReducers } from 'redux';
 
-import stepCounter from './modules/stepCounter'; //this is a placeholder reducer for now
+import addCountryData from './modules/addCountryData';
+import addGlobalData from './modules/addGlobalData';
 
 const reducers = combineReducers({
-  stepCounter,
+  addCountryData,
+  addGlobalData,
 });
 
 const Store = createStore(reducers, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());

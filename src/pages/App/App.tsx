@@ -25,6 +25,12 @@ class App extends React.Component<IApp, {}> {
     console.log(this.props);
   }
 
+  public async componentDidMount() {
+    const data = await fetch('https://corona.lmao.ninja/v2/countries/bangladesh?yesterday=true');
+    const parsedData = await data.json();
+    console.log(parsedData);
+  }
+
   public render() {
     return (
       <div className="app-body">
