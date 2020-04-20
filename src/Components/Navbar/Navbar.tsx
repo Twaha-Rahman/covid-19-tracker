@@ -14,7 +14,7 @@ const Navbar: React.SFC<INavbarProps> = (props) => {
       <NavLink to="/" exact={true} activeClassName="active-nav-link" className="nav-item-container">
         <FontAwesomeIcon icon={faHome} className="nav-item" />
       </NavLink>
-      <NavLink to="/analytics" activeClassName="active-nav-link" className="nav-item-container">
+      <NavLink to="/analytics/global" activeClassName="active-nav-link" className="nav-item-container">
         <FontAwesomeIcon icon={faChartBar} className="nav-item" />
       </NavLink>
 

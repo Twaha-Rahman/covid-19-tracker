@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
-import { withRouter, RouteComponentProps, Link } from 'react-router-dom';
+import { withRouter, RouteComponentProps } from 'react-router-dom';
 import mapStateToProps from '../../utilities/mapStateToProp';
 import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -16,7 +16,6 @@ import CoughingNormal from '../../assets/photos/normal/iconfinder___cough_tissue
 import IStore from '../../interfaces/IStore';
 
 interface IApp extends RouteComponentProps {
-
   store: IStore;
 }
 
@@ -45,14 +44,13 @@ class App extends React.Component<IApp, {}> {
           </div>
         </header>
         <div className="app-lower-part">
-
           <PreventionPart />
 
-
-          <ImgBanner title="Do your own test!" description="Follow the instructions to do a self test." imgJSX={
-            <WebP webpLink={CoughingWebp} normalLink={CoughingNormal} altText="Woman Coughing" />
-          } />
-
+          <ImgBanner
+            title="Do your own test!"
+            description="Follow the instructions to do a self test."
+            imgJSX={<WebP webpLink={CoughingWebp} normalLink={CoughingNormal} altText="Woman Coughing" />}
+          />
         </div>
       </div>
     );
