@@ -4,6 +4,7 @@ import { withRouter, RouteComponentProps } from 'react-router-dom';
 import mapStateToProps from '../../utilities/mapStateToProp';
 import './News.css';
 import newsApiKey from '../../apiKeys/newsApiKey';
+import NewsArticle from '../../Components/NewsArticle/NewsArticle';
 
 import IStore from '../../interfaces/IStore';
 import INews from '../../interfaces/INews';
@@ -27,7 +28,6 @@ class News extends React.Component<INewsProps, {}> {
     const parsedData = await data.json();
 
     if (parsedData.status === 'ok') {
-      // dispatch and store
       this.props.dispatch({
         type: 'addNews',
         news: parsedData.articles,
@@ -38,10 +38,26 @@ class News extends React.Component<INewsProps, {}> {
   public render() {
     if (this.props.store.addNews.length > 0) {
       const newsArr: any[] = [];
-      this.props.store.addNews.forEach((news: INews) => {
-        newsArr.push(news);
+      this.props.store.addNews.forEach((news: INews, index) => {
+        const date = news.publishedAt.slice(0, 10);
+
+        newsArr.push(
+          <NewsArticle
+            title={news.title}
+            urlToImage={news?.urlToImage}
+            urlToNews={news.url}
+            author={news?.author}
+            date={date}
+            key={index}
+          />
+        );
       });
-      console.log(newsArr);
+      return (
+        <div className="news-page">
+          <h1>Covid-19 Related News</h1>
+          {newsArr}
+        </div>
+      );
     }
 
     return (
