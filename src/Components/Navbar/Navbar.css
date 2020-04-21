@@ -5,7 +5,7 @@
   position: fixed;
   bottom: 0;
   left: 0;
-  margin: 0 5px;
+
   width: 100vw;
   height: 7.5vh;
   background-color: #fff;
@@ -15,7 +15,7 @@
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
-  width: 24.25%;
+  width: 25%;
   color: var(--unselected);
 }
 
@@ -27,7 +27,13 @@
 }
 
 .active-nav-link {
-  background-color: var(--custom-blue);
   color: #fff !important;
+}
+
+.active-nav-link span {
+  transition: ease-in-out 0.25s;
+  text-align: center;
+  width: 60%;
   border-radius: 16px;
+  background-color: var(--custom-blue);
 }

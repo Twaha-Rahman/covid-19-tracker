@@ -12,18 +12,26 @@ const Navbar: React.SFC<INavbarProps> = (props) => {
   return (
     <nav className="navbar-container">
       <NavLink to="/" exact={true} activeClassName="active-nav-link" className="nav-item-container">
-        <FontAwesomeIcon icon={faHome} className="nav-item" />
+        <span>
+          <FontAwesomeIcon icon={faHome} className="nav-item" />
+        </span>
       </NavLink>
       <NavLink to="/analytics/global" activeClassName="active-nav-link" className="nav-item-container">
-        <FontAwesomeIcon icon={faChartBar} className="nav-item" />
+        <span>
+          <FontAwesomeIcon icon={faChartBar} className="nav-item" />
+        </span>
       </NavLink>
 
       <NavLink to="/news" activeClassName="active-nav-link" className="nav-item-container">
-        <FontAwesomeIcon icon={faNewspaper} className="nav-item" />
+        <span>
+          <FontAwesomeIcon icon={faNewspaper} className="nav-item" />
+        </span>
       </NavLink>
 
       <NavLink to="/info" activeClassName="active-nav-link" className="nav-item-container">
-        <FontAwesomeIcon icon={faInfoCircle} className="nav-item" />
+        <span>
+          <FontAwesomeIcon icon={faInfoCircle} className="nav-item" />
+        </span>
       </NavLink>
     </nav>
   );
