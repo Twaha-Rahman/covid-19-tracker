@@ -4,7 +4,7 @@ import { withRouter, RouteComponentProps } from 'react-router-dom';
 import mapStateToProps from '../../utilities/mapStateToProp';
 import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBell } from '@fortawesome/free-regular-svg-icons';
+import { faMoon } from '@fortawesome/free-regular-svg-icons';
 import { faEye } from '@fortawesome/free-solid-svg-icons';
 import Button from '../../Components/Button/Button';
 import PreventionPart from '../../Components/PreventionPart/PreventionPart';
@@ -50,7 +50,7 @@ class App extends React.Component<IApp, {}> {
         <header className="app-upper-part">
           <div className="hamburger-bell-container">
             <div className="menu-button"></div>
-            <FontAwesomeIcon icon={faBell} className="bell-icon" />
+            <FontAwesomeIcon icon={faMoon} className="bell-icon" />
           </div>
           <h2>Covid-19 Tracker</h2>
           <div className="short-info">
