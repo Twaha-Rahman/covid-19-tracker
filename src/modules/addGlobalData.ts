@@ -9,7 +9,7 @@ const addGlobalData = (state = {}, action: IAddGlobalDataAction) => {
     const newState = { ...action.globalData };
     return newState;
   }
-  if (action.type === `addGlobalData`) {
+  if (action.type === `clearGlobalData`) {
     return {};
   }
   return state;
