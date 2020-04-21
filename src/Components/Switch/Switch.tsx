@@ -9,7 +9,7 @@ interface ISwitchProps {
 const Switch: React.SFC<ISwitchProps> = (props) => {
   return (
     <div className="switch-container">
-      <NavLink to="/analytics/global" activeClassName="active-switch" className="switch">
+      <NavLink to="/analytics/" exact={true} activeClassName="active-switch" className="switch">
         <h3>{props.names[0]}</h3>
       </NavLink>
       <NavLink to="/analytics/country" activeClassName="active-switch" className="switch">

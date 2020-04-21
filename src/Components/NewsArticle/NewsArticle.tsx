@@ -22,7 +22,7 @@ const NewsArticle: React.SFC<INewsArticleProps> = (props) => {
   }
 
   return (
-    <a href={props.urlToNews}>
+    <a href={props.urlToNews} target="_blank">
       <div className="news-article-container">
         <div className="news-article-img">{newsImg}</div>
         <div className="news-info-container">

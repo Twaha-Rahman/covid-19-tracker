@@ -53,10 +53,13 @@ class News extends React.Component<INewsProps, {}> {
         );
       });
       return (
-        <div className="news-page">
-          <h1>Covid-19 Related News</h1>
-          {newsArr}
-        </div>
+        <>
+          <div className="app-upper-part">
+            <h1>Covid-19 Related News</h1>
+            <h4>All the Covid-19 related news collected from many different sources from around the globe</h4>
+          </div>
+          <div className="news-page">{newsArr}</div>
+        </>
       );
     }
 

@@ -4,8 +4,8 @@
 
   margin-bottom: 1em;
   border-radius: 25px;
-
-  background-color: rgb(223, 91, 91);
+  color: var(--light-bg);
+  background-color: var(--custom-red);
 }
 
 .news-article-img {
@@ -13,7 +13,6 @@
   overflow: hidden;
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
-  background-color: rgb(16, 189, 68);
 }
 
 .news-article-img img {
@@ -24,5 +23,14 @@
 }
 
 .news-info-container {
+  padding-left: 1em;
+  padding-right: 1em;
   width: 60%;
+}
+
+.news-info-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: var(--custom-yellow);
 }
