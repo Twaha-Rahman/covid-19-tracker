@@ -28,7 +28,10 @@ class Analytics extends React.Component<IAnalytics, {}> {
         </div>
         <h2>Statistics</h2>
         <Switch names={['Global', 'Country']} />
-        <InfoBox title={'Total Cases'} number={this.props.store.addGlobalData.cases} />
+        <div className="info-box-container">
+          <InfoBox title={'Total Cases'} number={this.props.store.addGlobalData.cases} />
+          <InfoBox title={'Cases Today'} number={this.props.store.addGlobalData.todayCases} />
+        </div>
       </header>
     );
   }
