@@ -8,6 +8,7 @@ import { faBell } from '@fortawesome/free-regular-svg-icons';
 import Switch from '../../Components/Switch/Switch';
 
 import IStore from '../../interfaces/IStore';
+import InfoBox from '../../Components/InfoBox/InfoBox';
 
 interface IAnalytics extends RouteComponentProps {
   store: IStore;
@@ -27,6 +28,7 @@ class Analytics extends React.Component<IAnalytics, {}> {
         </div>
         <h2>Statistics</h2>
         <Switch names={['Global', 'Country']} />
+        <InfoBox title={'Total Cases'} number={this.props.store.addGlobalData.cases} />
       </header>
     );
   }
