@@ -13,11 +13,30 @@ import Loading from '../../Components/Loading/Loading';
 
 interface IAnalytics extends RouteComponentProps {
   store: IStore;
+  dispatch: any;
 }
 
 class Analytics extends React.Component<IAnalytics, {}> {
   constructor(props: any) {
     super(props);
+  }
+
+  public async componentDidMount() {
+    const globalData = await fetch('https://corona.lmao.ninja/v2/all?yesterday=true');
+    const globalDataParsed = await globalData.json();
+
+    const countryData = await fetch('https://corona.lmao.ninja/v2/countries/bangladesh?yesterday=true');
+    const countryDataParsed = await countryData.json();
+
+    this.props.dispatch({
+      type: 'addCountryData',
+      countryData: countryDataParsed,
+    });
+
+    this.props.dispatch({
+      type: 'addGlobalData',
+      globalData: globalDataParsed,
+    });
   }
 
   public render() {

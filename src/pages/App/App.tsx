@@ -26,24 +26,6 @@ class App extends React.Component<IApp, {}> {
     console.log(this.props);
   }
 
-  public async componentDidMount() {
-    const globalData = await fetch('https://corona.lmao.ninja/v2/all?yesterday=true');
-    const globalDataParsed = await globalData.json();
-
-    const countryData = await fetch('https://corona.lmao.ninja/v2/countries/bangladesh?yesterday=true');
-    const countryDataParsed = await countryData.json();
-
-    this.props.dispatch({
-      type: 'addCountryData',
-      countryData: countryDataParsed,
-    });
-
-    this.props.dispatch({
-      type: 'addGlobalData',
-      globalData: globalDataParsed,
-    });
-  }
-
   public render() {
     return (
       <div className="app-body">
