@@ -3,7 +3,7 @@
   position: relative;
   width: 80px;
   height: 80px;
-  top: calc(50vh - 7.5vh);
+  top: 25vh;
   left: 40vw;
 }
 .lds-ripple div {
