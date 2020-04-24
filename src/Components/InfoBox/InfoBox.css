@@ -1,0 +1,19 @@
+.info-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 36.5%;
+  color: rgb(73, 69, 69);
+  padding: 0.5em 1rem 0.5em 1rem;
+  border-radius: 15px;
+}
+
+.info-box h4 {
+  margin-top: 0.5rem;
+}
+
+.info-box h3 {
+  margin-bottom: 0.5rem;
+  font-family: 'Lato-Bold';
+  font-weight: 700;
+}
