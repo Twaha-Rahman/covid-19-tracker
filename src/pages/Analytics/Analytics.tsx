@@ -43,39 +43,50 @@ class Analytics extends React.Component<IAnalytics, {}> {
               bcackgroundColor={'var(--custom-yellow)'}
             />
             <InfoBox
+              title={'Deaths Today'}
+              number={this.props.store.addGlobalData.todayDeaths}
+              bcackgroundColor={'var(--custom-red)'}
+            />
+            <InfoBox
               title={'Affected Today'}
               number={this.props.store.addGlobalData.todayCases}
               bcackgroundColor={'var(--custom-yellow)'}
             />
             <InfoBox
               title={'Total Deaths'}
-              number={this.props.store.addGlobalData.cases}
+              number={this.props.store.addGlobalData.deaths}
               bcackgroundColor={'var(--custom-red)'}
             />
             <InfoBox
-              title={'Deaths Today'}
-              number={this.props.store.addGlobalData.todayCases}
-              bcackgroundColor={'var(--custom-red)'}
-            />
-            <InfoBox
-              title={'Reacovered'}
-              number={this.props.store.addGlobalData.cases}
+              title={'Recovered'}
+              number={this.props.store.addGlobalData.recovered}
               bcackgroundColor={'var(--custom-green)'}
             />
             <InfoBox
               title={'Active'}
-              number={this.props.store.addGlobalData.todayCases}
+              number={this.props.store.addGlobalData.active}
               bcackgroundColor={'var(--custom-blue)'}
             />
             <InfoBox
-              title={'Critical'}
-              number={this.props.store.addGlobalData.todayCases}
+              title={'Critical Cases'}
+              number={this.props.store.addGlobalData.critical}
               bcackgroundColor={'var(--custom-purple)'}
             />
             <InfoBox
               title={'Affected Countries'}
-              number={this.props.store.addGlobalData.todayCases}
+              number={this.props.store.addGlobalData.affectedCountries}
               bcackgroundColor={'var(--custom-red)'}
+            />
+
+            <InfoBox
+              title={'Persons Tested'}
+              number={this.props.store.addGlobalData.tests}
+              bcackgroundColor={'var(--custom-yellow)'}
+            />
+            <InfoBox
+              title={'Persons Tested Per Million People'}
+              number={this.props.store.addGlobalData.testsPerOneMillion}
+              bcackgroundColor={'var(--custom-yellow)'}
             />
           </div>
         </main>
