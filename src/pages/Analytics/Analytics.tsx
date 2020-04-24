@@ -9,6 +9,7 @@ import Switch from '../../Components/Switch/Switch';
 
 import IStore from '../../interfaces/IStore';
 import InfoBox from '../../Components/InfoBox/InfoBox';
+import Loading from '../../Components/Loading/Loading';
 
 interface IAnalytics extends RouteComponentProps {
   store: IStore;
@@ -20,6 +21,10 @@ class Analytics extends React.Component<IAnalytics, {}> {
   }
 
   public render() {
+    if (!this.props.store.addGlobalData.cases) {
+      return <Loading />;
+    }
+
     return (
       <>
         <header className="app-upper-part switch-upper-part">
